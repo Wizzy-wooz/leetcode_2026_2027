@@ -1,0 +1,7 @@
+"""Solution scaffold for Number of Connected Components In An Undirected Graph (Medium)."""
+
+
+class Solution:
+    """Implement the solution method for this problem."""
+
+    pass
