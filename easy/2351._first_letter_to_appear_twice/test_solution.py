@@ -25,7 +25,10 @@ class TestRepeatedCharacter(unittest.TestCase):
         self.assertEqual(self.solution.repeatedCharacter("abacb"), "a")
 
     def test_later_repeats_do_not_change_answer(self):
-        self.assertEqual(self.solution.repeatedCharacter("abcdefghijklmnopqrstuvwxyzabc"), "a")
+        self.assertEqual(self.solution.repeatedCharacter("abccba"), "c")
+
+    def test_repeat_is_found_at_the_last_character(self):
+        self.assertEqual(self.solution.repeatedCharacter("abcdefghijklmnopqrstuvwxyza"), "a")
 
 
 if __name__ == "__main__":
