@@ -1,0 +1,11 @@
+"""LeetCode 3760. Maximum Substrings With Distinct Start
+
+https://leetcode.com/problems/maximum-substrings-with-distinct-start/
+"""
+
+from __future__ import annotations
+
+
+class Solution:
+    def maxDistinct(self, s: str) -> int:
+        raise NotImplementedError()

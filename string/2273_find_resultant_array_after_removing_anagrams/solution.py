@@ -1,0 +1,11 @@
+"""LeetCode 2273. Find Resultant Array After Removing Anagrams
+
+https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/
+"""
+
+from __future__ import annotations
+
+
+class Solution:
+    def removeAnagrams(self, words: list[str]) -> list[str]:
+        raise NotImplementedError()

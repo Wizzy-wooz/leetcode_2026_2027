@@ -1,0 +1,11 @@
+"""LeetCode 2839. Check if Strings Can be Made Equal With Operations I
+
+https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/
+"""
+
+from __future__ import annotations
+
+
+class Solution:
+    def canBeEqual(self, s1: str, s2: str) -> bool:
+        raise NotImplementedError()

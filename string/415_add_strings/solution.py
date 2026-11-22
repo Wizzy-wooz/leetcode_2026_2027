@@ -1,0 +1,11 @@
+"""LeetCode 415. Add Strings
+
+https://leetcode.com/problems/add-strings/
+"""
+
+from __future__ import annotations
+
+
+class Solution:
+    def addStrings(self, num1: str, num2: str) -> str:
+        raise NotImplementedError()

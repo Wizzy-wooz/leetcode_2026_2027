@@ -1,0 +1,11 @@
+"""LeetCode 3703. Remove K-Balanced Substrings
+
+https://leetcode.com/problems/remove-k-balanced-substrings/
+"""
+
+from __future__ import annotations
+
+
+class Solution:
+    def removeSubstring(self, s: str, k: int) -> str:
+        raise NotImplementedError()

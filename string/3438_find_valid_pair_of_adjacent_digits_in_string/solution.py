@@ -1,0 +1,11 @@
+"""LeetCode 3438. Find Valid Pair of Adjacent Digits in String
+
+https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/
+"""
+
+from __future__ import annotations
+
+
+class Solution:
+    def findValidPair(self, s: str) -> str:
+        raise NotImplementedError()
