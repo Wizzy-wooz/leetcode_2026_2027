@@ -1,0 +1,113 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.2",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "014ceff7439795b1d23ccb43f60c5387",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<pre class='text-xs'>&lt;_duckdb.DuckDBPyConnection object at 0x111e58400&gt;</pre>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WJRX",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/plain": ""
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "WCZc",
+      "code_hash": "39f87f6704b1f427b08ff30ad4ffb37d",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='WCZc-0' random-id='e6b16a45-7f7f-1b90-4e35-a7130e21961d'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;id&#92;&quot;:1,&#92;&quot;country&#92;&quot;:&#92;&quot;US&#92;&quot;,&#92;&quot;state&#92;&quot;:&#92;&quot;approved&#92;&quot;,&#92;&quot;amount&#92;&quot;:1000,&#92;&quot;trans_date&#92;&quot;:&#92;&quot;2018-12-18&#92;&quot;},{&#92;&quot;id&#92;&quot;:2,&#92;&quot;country&#92;&quot;:&#92;&quot;US&#92;&quot;,&#92;&quot;state&#92;&quot;:&#92;&quot;declined&#92;&quot;,&#92;&quot;amount&#92;&quot;:2000,&#92;&quot;trans_date&#92;&quot;:&#92;&quot;2018-12-19&#92;&quot;},{&#92;&quot;id&#92;&quot;:3,&#92;&quot;country&#92;&quot;:&#92;&quot;US&#92;&quot;,&#92;&quot;state&#92;&quot;:&#92;&quot;approved&#92;&quot;,&#92;&quot;amount&#92;&quot;:2000,&#92;&quot;trans_date&#92;&quot;:&#92;&quot;2020-01-01&#92;&quot;},{&#92;&quot;id&#92;&quot;:4,&#92;&quot;country&#92;&quot;:&#92;&quot;DE&#92;&quot;,&#92;&quot;state&#92;&quot;:&#92;&quot;approved&#92;&quot;,&#92;&quot;amount&#92;&quot;:2000,&#92;&quot;trans_date&#92;&quot;:&#92;&quot;2020-01-07&#92;&quot;}]&quot;' data-total-rows='4' data-total-columns='5' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;country&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;state&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;amount&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;trans_date&quot;,[&quot;date&quot;,&quot;date&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PspT",
+      "code_hash": "8f4cfa0bfa061cfcc165e9145a784f7c",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='PspT-0' random-id='ca05b9b0-b211-91f9-9cc8-c032e4eed0ea'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;month&#92;&quot;:12,&#92;&quot;country&#92;&quot;:&#92;&quot;US&#92;&quot;,&#92;&quot;trans_count&#92;&quot;:2,&#92;&quot;approved_count&#92;&quot;:1,&#92;&quot;trans_total_amount&#92;&quot;:&#92;&quot;3000&#92;&quot;,&#92;&quot;approved_total_amount&#92;&quot;:&#92;&quot;1000&#92;&quot;},{&#92;&quot;month&#92;&quot;:1,&#92;&quot;country&#92;&quot;:&#92;&quot;US&#92;&quot;,&#92;&quot;trans_count&#92;&quot;:1,&#92;&quot;approved_count&#92;&quot;:1,&#92;&quot;trans_total_amount&#92;&quot;:&#92;&quot;2000&#92;&quot;,&#92;&quot;approved_total_amount&#92;&quot;:&#92;&quot;2000&#92;&quot;},{&#92;&quot;month&#92;&quot;:1,&#92;&quot;country&#92;&quot;:&#92;&quot;DE&#92;&quot;,&#92;&quot;trans_count&#92;&quot;:1,&#92;&quot;approved_count&#92;&quot;:1,&#92;&quot;trans_total_amount&#92;&quot;:&#92;&quot;2000&#92;&quot;,&#92;&quot;approved_total_amount&#92;&quot;:&#92;&quot;2000&#92;&quot;}]&quot;' data-total-rows='3' data-total-columns='6' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;month&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;country&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;trans_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;approved_count&quot;,[&quot;integer&quot;,&quot;i64&quot;]],[&quot;trans_total_amount&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]],[&quot;approved_total_amount&quot;,[&quot;number&quot;,&quot;decimal[38,0]&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "nSQz",
+      "code_hash": "850798af3d6b72335b10066f9ca385a3",
+      "outputs": [
+        {
+          "type": "error",
+          "ename": "sql-error",
+          "evalue": "Catalog Error: Table with name \"Employees\" already exists!",
+          "traceback": []
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "GCUV",
+      "code_hash": "dda4fcf9a98290c06dd4defd0e3626a0",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='GCUV-0' random-id='ccb21522-1a65-b370-dd02-b6d3fcfacfdc'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;employee_id&#92;&quot;:3,&#92;&quot;name&#92;&quot;:&#92;&quot;Mila&#92;&quot;,&#92;&quot;manager_id&#92;&quot;:9,&#92;&quot;salary&#92;&quot;:60301},{&#92;&quot;employee_id&#92;&quot;:12,&#92;&quot;name&#92;&quot;:&#92;&quot;Antonella&#92;&quot;,&#92;&quot;manager_id&#92;&quot;:null,&#92;&quot;salary&#92;&quot;:31000},{&#92;&quot;employee_id&#92;&quot;:13,&#92;&quot;name&#92;&quot;:&#92;&quot;Emery&#92;&quot;,&#92;&quot;manager_id&#92;&quot;:null,&#92;&quot;salary&#92;&quot;:67084},{&#92;&quot;employee_id&#92;&quot;:1,&#92;&quot;name&#92;&quot;:&#92;&quot;Kalel&#92;&quot;,&#92;&quot;manager_id&#92;&quot;:11,&#92;&quot;salary&#92;&quot;:21241},{&#92;&quot;employee_id&#92;&quot;:9,&#92;&quot;name&#92;&quot;:&#92;&quot;Mikaela&#92;&quot;,&#92;&quot;manager_id&#92;&quot;:null,&#92;&quot;salary&#92;&quot;:50937},{&#92;&quot;employee_id&#92;&quot;:11,&#92;&quot;name&#92;&quot;:&#92;&quot;Joziah&#92;&quot;,&#92;&quot;manager_id&#92;&quot;:6,&#92;&quot;salary&#92;&quot;:28485}]&quot;' data-total-rows='6' data-total-columns='4' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;employee_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;name&quot;,[&quot;string&quot;,&quot;str&quot;]],[&quot;manager_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]],[&quot;salary&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='true' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "uIRn",
+      "code_hash": "993bfb65dc1979495df883c834a005b5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='uIRn-0' random-id='fbca444e-ac9e-3a52-bfda-e0945a9b0568'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;Count&#92;&quot;:6}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;Count&quot;,[&quot;integer&quot;,&quot;i64&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "wRli",
+      "code_hash": "c0a57f0907fb15e41a0f6fe87afd5a8f",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/html": "<marimo-ui-element object-id='wRli-0' random-id='a5a4a2b1-5651-e746-7f13-2f1135e25a2c'><marimo-table data-initial-value='[]' data-label='null' data-data='&quot;[{&#92;&quot;employee_id&#92;&quot;:11}]&quot;' data-total-rows='1' data-total-columns='1' data-max-columns='50' data-banner-text='&quot;&quot;' data-pagination='true' data-page-size='10' data-field-types='[[&quot;employee_id&quot;,[&quot;integer&quot;,&quot;i32&quot;]]]' data-show-filters='true' data-show-download='true' data-show-search='true' data-show-column-summaries='false' data-show-data-types='true' data-show-page-size-selector='false' data-show-column-explorer='true' data-show-chart-builder='true' data-row-headers='[]' data-hidden-columns='[]' data-has-stable-row-id='false' data-lazy='false' data-preload='false'></marimo-table></marimo-ui-element>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}

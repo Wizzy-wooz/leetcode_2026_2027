@@ -1,0 +1,31 @@
+-- 615. Average Salary Departments VS Company
+-- https://leetcode.com/problems/average-salary-departments-vs-company/
+--
+-- Salary(id, employee_id, amount, pay_date)
+-- Employee(employee_id, department_id)
+-- Find the comparison result (higher/lower/same) of the average salary of employees in a
+-- department to the company's average salary.
+-- Return the result table in any order.
+-- The result format is in the following example.
+
+WITH t AS (
+  SELECT
+    STRFTIME(CAST(pay_date AS TIMESTAMP), '%Y-%m') AS pay_month,
+    department_id,
+    AVG(amount) OVER (PARTITION BY pay_date) AS company_avg_amount,
+    AVG(amount) OVER (PARTITION BY pay_date, department_id) AS department_avg_amount
+  FROM Salary AS s
+  JOIN Employee AS e
+    ON s.employee_id = e.employee_id
+)
+SELECT DISTINCT
+  pay_month,
+  department_id,
+  CASE
+    WHEN company_avg_amount = department_avg_amount
+    THEN 'same'
+    WHEN company_avg_amount < department_avg_amount
+    THEN 'higher'
+    ELSE 'lower'
+  END AS comparison
+FROM t;
